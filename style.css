@@ -16,7 +16,7 @@
 }
 .navigation{
     display: flex;
-    padding: 4rem;
+    padding: 2rem;
     justify-content: space-around;  
   
 }
@@ -26,16 +26,28 @@
     gap: 4rem;
 }
 .textt{
-    color: #fff;
+    color: rgb(205, 205, 205);
     font-size: 1.4rem;
     list-style: none;
+    cursor: pointer;
+}
+.textt:hover{
+    color: rgb(241, 192, 129);
+}
+.textt:active{
+    color: #fff;
+}
+.active{
+    color: #fff;
 }
 .logo-1{
     font-size: 1.8rem;
-    color: #fff;
+    /* color: #fff; */
     font-weight: 600;
+    color: rgb(241, 192, 129);
 }
 .nav-btn{
+    cursor: pointer;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: .5rem;
@@ -46,8 +58,14 @@
     border: none;
     border: 1px solid rgb(241, 192, 129);
 }
+.nav-btn:active{
+    background-color: rgb(241, 192, 129);
+    color: #fff;
+  
+
+}
 .justice-hading{
-    font-size:5.2rem;
+    font-size:4.2rem;
     color: #fff;
 }
 .rightside{
@@ -76,4 +94,35 @@
 }
 .right-icon{
     background-color: rgb(240, 172, 83);
+}
+
+@media only screen and (max-width: 768px) {
+.rightside{
+    display: flex;
+    flex-direction: column;
+
+}
+.justice-hading{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.justicepara{
+    font-size: 1rem;
+    text-align: center;
+}
+}
+@media only screen and (max-width: 940px) {
+html{
+    font-size: 85%;
+}
+
+}
+
+.btntext{
+    list-style: none;
+}
+@media (max-width:1020px){
+ .textt{
+    display: none;
+ }   
 }
